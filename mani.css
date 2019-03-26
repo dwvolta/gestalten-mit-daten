@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('NotoSans.ttf');
+}
+
+@font-face {
+    font-family: 'Noto Sans Light';
+    src: url('NotoSans-Light.ttf');
+}
+
+
+@font-face {
+    font-family: 'DW TheAntiquaB';
+    src: url('DWTheAntiquaB-W6SemiBold.otf');
+}
+
+body {
+    font-family: Noto Sans;
+    -webkit-font-smoothing: antialiased;
+    margin: 0 auto;
+    -moz-hyphens: auto;
+    -o-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+path {
+    opacity: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+    background-color: white;
+}
+
+
+p.intro-text {
+    font-size: 22px;
+    line-height: 28px;
+    color: #1D1D1B;
+}
+
+.button {
+    fill: #CBD2D8;
+    font-family: Noto Sans;
+}
+
+.button:hover {
+    fill: #00A5FF;
+}
+
+.tick{
+    font-family: Noto Sans;
+    font-size: 13px;
+  /*  fill: white;*/
+}
+
+.selected {
+    fill: #00A5FF;
+}
+
+.selected2 {
+    fill: white;
+}
+
+
+.button.active{
+    fill: #00A5FF;
+}
+.panel {
+    padding-top: 25px;
+}
+
+.infoHeading {
+    color: #002D5A;
+    font-size: 37px;
+    font-family: DW TheAntiquaB;
+}
+
+.infoSubhead {
+    color: #002D5A;
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.infoText {
+    color: #1D1D1B;
+    font-size: 15px;
+}
+
+img.chart {
+    display: inline-block;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 45px;
+}
+
+.charts{
+    padding-top:50px;
+}
+
+
+.chart {
+    vertical-align: top;
+    display: inline-block;
+    color: #1C3155;
+    font-size: 19px;
+    font-family: Noto Sans;
+}
+
+
+.chartDesc {
+    color: #1D1D1B;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-top: 10px;
+    margin: 0 auto;
+    word-wrap: break-word;
+    margin-right: 20px;
+}
