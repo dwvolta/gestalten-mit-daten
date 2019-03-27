@@ -17,7 +17,6 @@
             .rangeBands([0, 795], .2, .08);
         x.domain(chartData.map(function(d) { return d.category; }));
 
-        var isWhite = false;
 
         var xAxis = d3.svg.axis()
             .scale(x)
@@ -43,14 +42,10 @@
         svg.append("g")
             .attr("class", "buttonText")
             .attr("transform", "translate(0,4)")
-                .call(xAxis)
+            .call(xAxis)
             .selectAll(".tick text")
-            // .attr("id", function(d, i) { return chartData[i].slug; })
-            .attr("id", function(d, i) {  return i } )
-           
-                .call(wrap)
-            // .attr("id", function(d, i) { return i })
-            
+            .attr("id", function(d, i) { return i })
+            .call(wrap)
             .style("pointer-events", "none")
             .on("click", function(d) {
                 d3.event.stopPropagation();
@@ -62,12 +57,9 @@
             .attr("y", 0)
             .attr("height", 50)
             .attr("width", cellWidth - 5)
-
             .on("click", function() {
                 d3.select(".selected").classed("selected", false);
                 d3.select(this).classed("selected", true)
-                //  d3.select("parentNode.selected2").classed("selected2", false);
-                // d3.select(this.parentNode).classed("selected2", true)
             })
 
 
@@ -161,7 +153,7 @@
                 .remove()
             d3.selectAll(".panel")
                 .remove()
-             d3.select(this.parentNode).selectAll(".buttonText").selectAll(".tick text")
+            d3.select(this.parentNode).selectAll(".buttonText").selectAll(".tick text")
                 .style("fill", "#1C3155")
 
             d3.selectAll(".buttonText")
@@ -181,25 +173,12 @@
                 { "x": 10, "y": 100 }
             ];
 
-            var isWhite= d3.select(this.parentNode).selectAll(".categ").data()[this.id].id 
+            var bool = d3.select(this.parentNode).selectAll(".categ").data()[this.id].id
 
-            d3.select(this.parentNode).selectAll(".tick text")   
+            d3.select(this.parentNode).selectAll(".tick text")
                 .style("fill", function(d, i) {
-                if (isWhite == this.id)
-                {return "white"} ;
-        })
-
-    
-           
-           // .filter(function(d, i) {
-           //  return this.id;
-           //  })
-          
-            // .style('fill', function(d, i) {
-            // return "white";
-                console.log ( (this.id == d3.select(this.parentNode).selectAll(".categ").data()[this.id].id ))
-                console.log(d3.select(this.parentNode).selectAll(".categ").data()[this.id].id)
-                console.log(this.id);
+                    if (bool == this.id) { return "white" };
+                })
             d3.selectAll(".link")
                 .data(d)
                 .enter()
