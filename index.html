@@ -2,7 +2,7 @@
 
 <head>
     <title>Gestalten mit Daten</title>
-    <link rel="stylesheet" type="text/css" href="./mani.css">
+    <link rel="stylesheet" type="text/css" href="./main.css">
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="v2-data.js"></script>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -56,7 +56,7 @@
             .attr("x", function(d, i) { return cellWidth * i })
             .attr("y", 0)
             .attr("height", 50)
-            .attr("width", cellWidth - 5)
+            .attr("width", cellWidth - 3)
             .on("click", function() {
                 d3.select(".selected").classed("selected", false);
                 d3.select(this).classed("selected", true)
@@ -154,7 +154,7 @@
             d3.selectAll(".panel")
                 .remove()
             d3.select(this.parentNode).selectAll(".buttonText").selectAll(".tick text")
-                .style("fill", "#1C3155")
+                .style("fill", "white")
 
             d3.selectAll(".buttonText")
                 .style("fill", "#1C3155")

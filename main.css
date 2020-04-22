@@ -51,6 +51,10 @@ p.intro-text {
     fill: #002D5A;
 }
 
+buttonText:hover {
+    fill: white !important;
+}
+
 .tick{
     font-family: Noto Sans;
     font-size: 13px;
@@ -58,7 +62,7 @@ p.intro-text {
 }
 
 .selected {
-    fill: #00A5FF;
+    fill: white;
 }
 
 .selected2 {
@@ -67,8 +71,9 @@ p.intro-text {
 
 
 .button.active{
-    fill: #00A5FF;
+    fill: white;
 }
+
 .panel {
     padding-top: 25px;
 }
