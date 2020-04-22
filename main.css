@@ -78,25 +78,28 @@ buttonText:hover {
 }
 
 .panel {
-    padding-top: 25px;
+    padding-top: 40px;
 }
 
 .infoHeading {
     color: #002D5A;
-    font-size: 37px;
-    font-family: DW TheAntiquaB;
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: Noto Sans;
+    padding-bottom: 18px;
 }
 
 .infoSubhead {
-    color: #002D5A;
+    color: #4B545c;
     font-size: 19px;
-    font-weight: 600;
-    margin-top: 50px;
+    font-weight: 700;
+    padding-top: 18px;
 }
 
 .infoText {
-    color: #1D1D1B;
+    color: #4B545c;
     font-size: 15px;
+    line-height: 1.5;
 }
 
 img.chart {
@@ -121,7 +124,7 @@ img.chart {
 
 
 .chartDesc {
-    color: #1D1D1B;
+    color: #4B545c;
     font-size: 15px;
     margin-top: 8px;
     margin-top: 10px;
