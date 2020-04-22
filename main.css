@@ -58,7 +58,10 @@ buttonText:hover {
 .tick{
     font-family: Noto Sans;
     font-size: 13px;
-  /*  fill: white;*/
+}
+
+.tick:hover{
+    fill: white;
 }
 
 .selected {

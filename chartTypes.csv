@@ -1,4 +1,4 @@
-﻿chartName,category,img,link,description
+chartName,category,img,link,description
 Abweichungsbalken,Abweichung,abweichungsbalken.svg,TRUE,"Ein einfaches Standard-Balkendiagramm, das sowohl negative als auch positive Betragswerte bewältigen kann."
 Gestaffelte Abweichungsbalken,Abweichung,gestaffelte-abweichungsbalken.svg,TRUE,"Für die Präsentation von Umfrageergebnissen, die Stimmungen beinhalten (z.B. Uneinigkeit, Neutralität, Zustimmung)."
 Spine-Diagramm,Abweichung,spine-diagramm.svg,TRUE,"Teilt einen einzelnen Wert in zwei gegensätzliche Komponenten auf (z.B. männlich/weiblich)."
@@ -41,7 +41,7 @@ Donutdiagramm,Teil des Ganzen,donutdiagramm.svg,https://dwbrand.frontify.com/doc
 Kacheldiagramm,Teil des Ganzen,kacheldiagramm.svg,TRUE,"Verwendung für hierarchische „Teil-des-Ganzen-Beziehungen“; kann schwierig zu lesen sein, wenn es viele kleine Segmente gibt."
 Bogendiagramm,Teil des Ganzen,bogendiagramm.svg,TRUE,"Ein Halbkreis, der häufig für die Visualisierung politischer Ergebnisse in Parlamenten genutzt wird."
 Gitterdiagramm,Teil des Ganzen,gitterdiagramm.svg,TRUE,"Gut für die Anzeige von %-Informationen, sie funktionieren am besten, wenn sie auf ganze Zahlen angewendet werden und funktionieren gut in mehreren Layouts."
-Mengendiagramm,Teil des Ganzen,venn.svg,TRUE,"Generell nur für die schematische Darstellung verwendet."
+Mengendiagramm,Teil des Ganzen,mengendiagramm.svg,TRUE,"Generell nur für die schematische Darstellung verwendet."
 Wasserfall-Diagramm,Teil des Ganzen,wasserfall-diagramm.svg,TRUE,"Kann nützlich sein, um „Teil-des-Ganzen-Beziehungen“ zu zeigen, bei denen einige der Komponenten negativ sind."
 Säulendiagramm,Größen- ordnung,saeulen-diagramm.svg,https://dwbrand.frontify.com/document/22#/saeulen-und-balkendiagramm,"Die Standardmethode, um die Größe der Dinge zu vergleichen. Muss immer bei 0 auf der Achse beginnen."
 Balkendiagramm,Größen- ordnung,balkendiagramm.svg,https://dwbrand.frontify.com/document/22#/saeulen-und-balkendiagramm,"Gut, wenn die Daten keine Zeitreihen sind und Etiketten lange Kategorienamen haben."
@@ -57,7 +57,6 @@ Gruppierte Symbole,Größen- ordnung,gruppierte-symbole.svg,https://dwbrand.fron
 Flächenkartogramm (Choropletenkarte),Räumlich,flaechenkartogramm.svg,TRUE,"Der Standardansatz für die Darstellung von Daten auf einer Karte - sollte nicht Summen, sondern Raten sein und eine vernünftige Basisgeographie verwenden."
 Proportionale Symbole (Anzahl/Höhe),Räumlich,proportionale-symbole-karte.svg,https://dwbrand.frontify.com/document/22#/proportionale-symbole,"Für Summen anstatt für Raten - seien Sie vorsichtig, dass kleine Abweichungen in den Daten schwer zu erkennen sind. Überlegen Sie ob ein Balkendiagramm besser wäre."
 Flusskarten,Räumlich,flusskarten.svg,TRUE,"Zur Darstellung einer eindeutigen Bewegung über eine Karte hinweg."
-Höhenlinienkarte,Räumlich,hoehenlinienkarte.svg,TRUE,"Zur Darstellung gleichwertiger Flächen auf einer Karte. Verwendung von Abweichungs-Farbschemata zur Darstellung von +/- Werten möglich"
 Punkte-Dichte Karte,Räumlich,punkte-dichte-karte.svg,TRUE,"Wird verwendet, um den Standort einzelner Ereignisse/Standorte anzuzeigen - stellen Sie sicher, dass Sie alle Muster, die der Leser sehen sollte, mit Anmerkungen versehen."
 Heatmap,Räumlich,heatmap.svg,https://dwbrand.frontify.com/document/22#/heatmap,"Rasterbasierte Datenwerte, die mit einer Intensitäts-Farbskala abgebildet werden. Als Choropleth-Karte – aber nicht zu einer administrativen/politischen Einheit gehalten."
 Sankey,Fluss,sankey.svg,TRUE,"Zeigt Änderungen in den Strömungen von eineZustand zu mindestens einem anderen; gut geeignet, um das spätere Ergebnis eines komplexen Prozesses nachzuvollziehen."
