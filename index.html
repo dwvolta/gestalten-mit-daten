@@ -42,6 +42,7 @@
         svg.append("g")
             .attr("class", "buttonText")
             .attr("transform", "translate(0,4)")
+            .attr("style", "text-transform:uppercase")
             .call(xAxis)
             .selectAll(".tick text")
             .attr("id", function(d, i) { return i })

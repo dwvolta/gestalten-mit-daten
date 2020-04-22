@@ -8,11 +8,18 @@
     src: url('NotoSans-Light.ttf');
 }
 
+@font-face {
+    font-family: 'NotoSans-SemiBold';
+    src: url('NotoSans-SemiBold.ttf');
+}
 
 @font-face {
     font-family: 'DW TheAntiquaB';
     src: url('DWTheAntiquaB-W6SemiBold.otf');
 }
+
+
+
 
 body {
     font-family: Noto Sans;
@@ -51,13 +58,14 @@ p.intro-text {
     fill: #002D5A;
 }
 
-buttonText:hover {
+.buttonText:hover {
     fill: white !important;
 }
 
 .tick{
     font-family: Noto Sans;
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .tick:hover{
@@ -85,21 +93,28 @@ buttonText:hover {
     color: #002D5A;
     font-size: 22px;
     line-height: 1.5;
-    font-family: Noto Sans;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    font-family: NotoSans-SemiBold;
     padding-bottom: 18px;
 }
 
 .infoSubhead {
     color: #4B545c;
-    font-size: 19px;
+     font-family: NotoSans-SemiBold;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+     line-height: 1.5;
     font-weight: 700;
     padding-top: 18px;
 }
 
 .infoText {
     color: #4B545c;
+    font-family: Noto Sans;
     font-size: 15px;
     line-height: 1.5;
+    letter-spacing: 0.2px;
 }
 
 img.chart {
@@ -117,9 +132,11 @@ img.chart {
 .chart {
     vertical-align: top;
     display: inline-block;
-    color: #1C3155;
-    font-size: 19px;
-    font-family: Noto Sans;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: #002D5A;
+    font-size: 16px;
+    font-family: NotoSans-SemiBold;
 }
 
 
@@ -129,6 +146,10 @@ img.chart {
     margin-top: 8px;
     margin-top: 10px;
     margin: 0 auto;
+    font-family: Noto Sans;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 1.5;
     word-wrap: break-word;
     margin-right: 20px;
 }
