@@ -66,9 +66,18 @@
 	.st59{fill:#BFC7CE;stroke:#F1F3F5;stroke-width:0.5;stroke-linejoin:round;}
 	.st60{fill:#002D5A;stroke:#F1F3F5;stroke-width:0.5;stroke-linejoin:round;}
 	.st61{fill:#0064B4;stroke:#F1F3F5;stroke-width:0.5;stroke-linejoin:round;}
-	.st62{fill:none;stroke:#00A5FF;stroke-width:3;stroke-miterlimit:10;}
-	.st63{fill:none;stroke:#00A5FF;stroke-width:2;stroke-miterlimit:10;}
-	.st64{fill:none;stroke:#00A5FF;stroke-miterlimit:10;}
+	.st62{fill:#3B444D;}
+	.st63{fill:#CBD2D8;}
+	.st64{fill:none;stroke:#00A5FF;stroke-width:3;stroke-miterlimit:10;}
+	.st65{fill:none;stroke:#00A5FF;stroke-width:2;stroke-miterlimit:10;}
+	.st66{fill:none;stroke:#00A5FF;stroke-miterlimit:10;}
+	.st67{fill:none;stroke:#565B61;}
+	.st68{fill:#80BF1B;}
+	.st69{fill:none;stroke:#E4E8EB;stroke-width:1.875;}
+	.st70{fill:none;stroke:#BFC7CE;stroke-width:1.875;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st71{fill:none;stroke:#002D5A;stroke-width:1.875;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st72{fill:none;stroke:#00A5FF;stroke-width:2.5;}
+	.st73{opacity:0.85;fill:#00A5FF;}
 </style>
 <g id="Hintergrund">
 	<rect x="0" class="st0" width="240" height="240"/>
@@ -623,7 +632,7 @@
 		<g>
 			<g>
 				<g>
-					<path class="st62" d="M160.6,88.9c0,0-84.4,4.4-59.9,86.3"/>
+					<path class="st64" d="M160.6,88.9c0,0-84.4,4.4-59.9,86.3"/>
 					<g>
 						<polygon class="st5" points="95.6,171.7 100.6,174.5 103.4,169.5 104.3,172.8 101.6,177.8 96.5,175.1 						"/>
 					</g>
@@ -631,7 +640,7 @@
 			</g>
 			<g>
 				<g>
-					<path class="st63" d="M128,99.1c0,0-18.9,12.7,1.1,30.4"/>
+					<path class="st65" d="M128,99.1c0,0-18.9,12.7,1.1,30.4"/>
 					<g>
 						<polygon class="st5" points="125,129.2 128.8,129.1 128.6,125.2 130.3,126.8 130.5,130.6 126.7,130.8 						"/>
 					</g>
@@ -639,7 +648,7 @@
 			</g>
 			<g>
 				<g>
-					<path class="st64" d="M121.7,101.8c0,0-35.5,29.4,18.2,82.5"/>
+					<path class="st66" d="M121.7,101.8c0,0-35.5,29.4,18.2,82.5"/>
 					<g>
 						<polygon class="st5" points="137.8,184.1 139.7,184.1 139.7,182.2 140.5,183 140.5,185 138.6,185 						"/>
 					</g>
