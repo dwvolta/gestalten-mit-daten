@@ -40,8 +40,12 @@ path {
     margin: 0 auto;
     width: 800px;
     background-color: white;
+    height: 100%;
 }
 
+svg{
+   transform: translateY(2px);
+}
 
 p.intro-text {
     font-size: 22px;
@@ -58,8 +62,6 @@ p.intro-text {
     fill: #002D5A;
 }
 
-
-
 .button:hover .tick{
 fill: white;
 }
@@ -70,6 +72,15 @@ fill: white;
     font-weight: 400;
     fill: #4b545c;
 }
+
+#idTick2 ,#idTick3 ,#idTick7, #idTick8{
+    transform: translateY(22%);
+}
+
+#idTick0 ,#idTick1 ,#idTick5, #idTick6{
+    transform: translateY(12%);
+}
+
 
 .selected {
     fill: white;
@@ -121,7 +132,6 @@ img.chart {
 .charts{
     padding-top:50px;
 }
-
 
 .chart {
     vertical-align: top;

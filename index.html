@@ -28,7 +28,7 @@
         var cellWidth = (plotWidth) / plotCategories.length
         let svg = container.append("svg")
             .attr("width", plotWidth)
-            .attr("height", 55)
+            .attr("height", 60)
             .append("g")
         let category = svg.selectAll(".categ")
             .data(plotCategories)
@@ -57,11 +57,16 @@
             .attr("class", "button")
             .attr("x", function(d, i) { return cellWidth * i })
             .attr("y", 0)
-            .attr("height", 50)
+            .attr("height", 60)
             .attr("width", cellWidth - 3)
             .on("click", function() {
-                d3.select(".selected").classed("selected", false);
+                d3.select(".selected").classed("selected", false)
+                .attr('stroke', "none")
+                .attr('stroke-width', '0');
                 d3.select(this).classed("selected", true)
+                .attr('stroke', '#b2bcc5')
+                .attr('stroke-width', '1')
+                .attr('stroke-dasharray', "145, 85.888888, 60 ")
             })
 
 
@@ -74,7 +79,7 @@
                     lineNumber = 0,
                     lineHeight = 1.2,
                     //y = text.attr("y"),
-                    y = 5,
+                    y = 12,
                     dy = parseFloat(text.attr("dy")),
                     tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
                 while (word = words.pop()) {
