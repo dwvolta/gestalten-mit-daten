@@ -58,12 +58,9 @@ p.intro-text {
     fill: #002D5A;
 }
 
-/*.tick.button:hover {
-    fill: white !important;
-}*/
 
-.button:hover .buttonText{
-border: 10px solid red;
+
+.button:hover .tick{
 fill: white;
 }
 
@@ -71,10 +68,7 @@ fill: white;
     font-family: NotoSans-SemiBold;
     font-size: 12px;
     font-weight: 400;
-}
-
-.tick:hover{
-    /*fill: white;*/
+    fill: #4b545c;
 }
 
 .selected {
