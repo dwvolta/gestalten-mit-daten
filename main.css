@@ -50,7 +50,7 @@ p.intro-text {
 }
 
 .button {
-    fill: #CBD2D8;
+    fill: #d8dde2;
     font-family: Noto Sans;
 }
 
@@ -58,8 +58,13 @@ p.intro-text {
     fill: #002D5A;
 }
 
-.buttonText:hover {
+/*.tick.button:hover {
     fill: white !important;
+}*/
+
+.button:hover .buttonText{
+border: 10px solid red;
+fill: white;
 }
 
 .tick{
@@ -69,17 +74,12 @@ p.intro-text {
 }
 
 .tick:hover{
-    fill: white;
+    /*fill: white;*/
 }
 
 .selected {
     fill: white;
 }
-
-.selected2 {
-    fill: white;
-}
-
 
 .button.active{
     fill: white;
