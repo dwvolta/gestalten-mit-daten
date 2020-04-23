@@ -67,7 +67,7 @@ fill: white;
 }
 
 .tick{
-    font-family: NotoSans-SemiBold;
+    font-family: Noto Sans;
     font-size: 12px;
     font-weight: 400;
     fill: #4b545c;
@@ -100,13 +100,13 @@ fill: white;
     line-height: 1.5;
     letter-spacing: 0.2px;
     font-weight: 700;
-    font-family: NotoSans-SemiBold;
+    font-family: Noto Sans;
     padding-bottom: 18px;
 }
 
 .infoSubhead {
     color: #4B545c;
-     font-family: NotoSans-SemiBold;
+     font-family: Noto Sans;
     font-size: 15px;
     letter-spacing: 0.2px;
      line-height: 1.5;
@@ -140,7 +140,7 @@ img.chart {
     letter-spacing: 0.2px;
     color: #002D5A;
     font-size: 16px;
-    font-family: NotoSans-SemiBold;
+    font-family: Noto Sans;
 }
 
 
