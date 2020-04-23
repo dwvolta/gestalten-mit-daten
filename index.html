@@ -58,10 +58,23 @@
             .attr("y", 0)
             .attr("height", 50)
             .attr("width", cellWidth - 3)
+            .on("mouseover", handleMouseOver)
+            .on("mouseout", handleMouseOut)
             .on("click", function() {
                 d3.select(".selected").classed("selected", false);
                 d3.select(this).classed("selected", true)
             })
+
+        function handleMouseOver(d,i) {
+               d3.select(this.childNode).selectAll(".buttonText").selectAll(".tick text")
+                .attr("style", "fill:green")
+        }
+
+        function handleMouseOut(d,i) {
+            // Use D3 to select element, change color back to normal
+            d3.select(this.childNode).selectAll(".buttonText").selectAll(".tick text")
+            .attr("style", "fill:yellow")
+        }
 
 
         function wrap(text) {
@@ -155,11 +168,11 @@
                 .remove()
             d3.selectAll(".panel")
                 .remove()
-            d3.select(this.parentNode).selectAll(".buttonText").selectAll(".tick text")
-                .style("fill", "white")
+            // d3.select(this.parentNode).selectAll(".buttonText").selectAll(".tick text")
+            //     .style("fill", "white")
 
-            d3.selectAll(".buttonText")
-                .style("fill", "#4b545c")
+            // d3.selectAll(".buttonText")
+            //     .style("fill", "#4b545c")
 
             let x1 = cellWidth * this.id + (cellWidth / 2)
             let lineData = [
@@ -181,6 +194,7 @@
                 .style("fill", function(d, i) {
                     if (bool == this.id) { return "white" };
                 })
+
             d3.selectAll(".link")
                 .data(d)
                 .enter()
