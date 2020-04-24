@@ -34,6 +34,7 @@ body {
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
+    /*fill: #4B545c;*/
 }
 
 path {
@@ -54,29 +55,23 @@ svg{
 p.intro-text {
     font-size: 22px;
     line-height: 28px;
-    color: #1D1D1B;
+    color: #4B545c;
 }
 
 .button {
     fill: #d8dde2;
     font-family: NotoSans;
+    padding-bottom: 20px;
 }
 
 .button:hover {
     fill: #002D5A;
 }
 
-.button:hover .tick{
-fill: white;
-}
 
 .tick{
-    /*font-family: NotoSans;*/
     font-size: 12px;
-
-    /*fill: #4b545c;*/
-    font-family: "Noto Sans", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    fill: rgb(75, 84, 92);
+    font-family: "NotoSans", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 12px;
     line-height: 1.4;
     font-weight: 500;
@@ -104,6 +99,12 @@ letter-spacing: 0.2px;
 .selected {
     fill: white;
 }
+
+.selected:hover {
+    fill: white !important;
+}
+
+
 
 .button.active{
     fill: white;
