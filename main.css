@@ -1,15 +1,19 @@
 @font-face {
-    font-family: 'Noto Sans';
+    font-family: 'NotoSans';
     src: url('NotoSans.ttf');
 }
 
 @font-face {
-    font-family: 'Noto Sans Light';
+    font-family: 'NotoSans Bold';
+    src: url('NotoSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'NotoSans Light';
     src: url('NotoSans-Light.ttf');
 }
 
 @font-face {
-    font-family: 'NotoSans-SemiBold';
+    font-family: 'NotoSans SemiBold';
     src: url('NotoSans-SemiBold.ttf');
 }
 
@@ -22,7 +26,7 @@
 
 
 body {
-    font-family: Noto Sans;
+    font-family: NotoSans;
     -webkit-font-smoothing: antialiased;
     margin: 0 auto;
     -moz-hyphens: auto;
@@ -69,7 +73,7 @@ fill: white;
 .tick{
     font-family: Noto Sans;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
     fill: #4b545c;
 }
 
@@ -78,8 +82,7 @@ fill: white;
     -ms-transform: translateY (22%);
     -webkit-transform: translateY (22%);
     -moz-transform: translateY (22%);
-    -o-transform: translateY (22%);
-    transform: translateY(22%);
+    -o-transform: translateY (22%)
 }
 
 #idTick0 ,#idTick1 ,#idTick5, #idTick6{
@@ -88,7 +91,6 @@ fill: white;
     -webkit-transform: translateY (12%);
     -moz-transform: translateY (12%);
     -o-transform: translateY (12%);
-    transform: translateY(12%);
 }
 
 
@@ -116,7 +118,7 @@ fill: white;
 
 .infoSubhead {
     color: #4B545c;
-    font-family: Noto Sans;
+    font-family: NotoSans SemiBold;
     font-size: 15px;
     letter-spacing: 0.2px;
     line-height: 1.5;
@@ -126,7 +128,8 @@ fill: white;
 
 .infoText {
     color: #4B545c;
-    font-family: Noto Sans;
+    font-family: NotoSans;
+    font-weight: 400;
     font-size: 15px;
     line-height: 1.5;
     letter-spacing: 0.2px;
@@ -150,7 +153,7 @@ img.chart {
     letter-spacing: 0.2px;
     color: #002D5A;
     font-size: 16px;
-    font-family: Noto Sans;
+    font-family: NotoSans;
 }
 
 
@@ -160,7 +163,7 @@ img.chart {
     margin-top: 8px;
     margin-top: 10px;
     margin: 0 auto;
-    font-family: Noto Sans;
+    font-family: NotoSans;
     font-weight: 400;
     letter-spacing: 0.2px;
     line-height: 1.5;
