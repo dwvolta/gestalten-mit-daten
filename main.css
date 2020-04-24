@@ -59,7 +59,7 @@ p.intro-text {
 
 .button {
     fill: #d8dde2;
-    font-family: Noto Sans;
+    font-family: NotoSans;
 }
 
 .button:hover {
@@ -71,26 +71,33 @@ fill: white;
 }
 
 .tick{
-    font-family: Noto Sans;
+    /*font-family: NotoSans;*/
     font-size: 12px;
-    font-weight: 600;
-    fill: #4b545c;
+
+    /*fill: #4b545c;*/
+    font-family: "Noto Sans", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    fill: rgb(75, 84, 92);
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 500;
+font-style: normal;
+letter-spacing: 0.2px;
 }
 
 #idTick2 ,#idTick3 ,#idTick7, #idTick8{
-    transform: translateY(22%);
-    -ms-transform: translateY (22%);
-    -webkit-transform: translateY (22%);
-    -moz-transform: translateY (22%);
-    -o-transform: translateY (22%)
+    -ms-transform: translateY(13px);
+    -webkit-transform: translateY(13px);
+    -moz-transform: translateY(13px);
+    -o-transform: translateY(13px);
+    transform: translateY(13px);
 }
 
 #idTick0 ,#idTick1 ,#idTick5, #idTick6{
-    transform: translateY(12%);
-    -ms-transform: translateY (12%);
-    -webkit-transform: translateY (12%);
-    -moz-transform: translateY (12%);
-    -o-transform: translateY (12%);
+    -ms-transform: translateY(7px);
+    -webkit-transform: translateY(7px);
+    -moz-transform: translateY(7px);
+    -o-transform: translateY(7px);
+    transform: translateY(7px);
 }
 
 
@@ -112,13 +119,13 @@ fill: white;
     line-height: 1.5;
     letter-spacing: 0.2px;
     font-weight: 700;
-    font-family: Noto Sans;
+    font-family: NotoSans;
     padding-bottom: 18px;
 }
 
 .infoSubhead {
     color: #4B545c;
-    font-family: NotoSans SemiBold;
+    font-family: NotoSans;
     font-size: 15px;
     letter-spacing: 0.2px;
     line-height: 1.5;
@@ -129,10 +136,12 @@ fill: white;
 .infoText {
     color: #4B545c;
     font-family: NotoSans;
-    font-weight: 400;
     font-size: 15px;
     line-height: 1.5;
     letter-spacing: 0.2px;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
 }
 
 img.chart {
@@ -169,4 +178,9 @@ img.chart {
     line-height: 1.5;
     word-wrap: break-word;
     margin-right: 20px;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    margin-top: -5;
+}
 }
