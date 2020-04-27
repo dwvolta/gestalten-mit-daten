@@ -11,19 +11,22 @@
 
 <body>
     <script>
+ 
+ 
     d3.csv("chartTypes.csv", function(error, chartData) {
 
         var x = d3.scale.ordinal()
             .rangeBands([0, 795], .2, .08);
         x.domain(chartData.map(function(d) { return d.category; }));
 
-
+  
         var xAxis = d3.svg.axis()
             .scale(x)
         var container = d3.select("body")
             .append("div")
             .attr("class", 'container');
         var plotCategories = catData.categories
+
         var plotWidth = 800;
         var cellWidth = (plotWidth) / plotCategories.length
         let svg = container.append("svg")
@@ -36,9 +39,11 @@
             .append("g")
             .attr("class", "categ")
             .attr("id", function(d, i) { return i })
+            // .property selected plotCategories[0]
             .on("mouseover", mouseOver)
             .on("mouseout", mouseOut)
             .on("mousedown", addLink)
+        
 
             
              var idTick2 = null;
@@ -75,6 +80,12 @@
                 .attr('stroke-dasharray', "145, 85.888888, 60 ")
             })
 
+        var anfang = plotCategories[0]
+        var erstes = d3.selectAll("rect")
+              .filter(function(d, i) { return i == 0 });
+
+
+        d3.select(window).on("load", addLink(anfang), startStyle());
 
         function wrap(text) {
             text.each(function() {
@@ -139,9 +150,8 @@
         }
 
         function addInfo(el) {
-            console.log(el.id)
-            let loookUp = el.category
-            let headline = loookUp.replace(/([-]|\.)\s/g, '');
+            let lookUp = el.category
+            let headline = lookUp.replace(/([-]|\.)\s/g, '');
             let infoPanel = container.append("div")
                 .attr("class", "panel")
                 .attr("id", "infoPanel")
@@ -160,7 +170,7 @@
             infoPanel.append("div")
                 .attr("id", "charts")
                 .attr("class", "charts")
-            addCharts(loookUp)
+            addCharts(lookUp)
         }
 
         function addLink(d) {
@@ -184,6 +194,16 @@
             }
         }
 
+        function startStyle(){
+             d3.select( '#idTick0')
+                .style("fill", "#4b545c")
+             d3.selectAll("rect")
+              .filter(function(d, i) { return i == 0 })
+                .attr('stroke', '#b2bcc5')
+                .attr('stroke-width', '1')
+                .attr('stroke-dasharray', "145, 85.888888, 60 ")
+                 .classed("selected", true)
+        }
 
         function pointer() {
             this.style.cursor = 'pointer'
